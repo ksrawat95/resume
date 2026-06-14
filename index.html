@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundan Singh | Lead Data Engineer | AI Data Engineer</title>
+    <meta name="description" content="Kundan Singh - Lead Data Engineer at Pella Corporation. 8+ years experience in Azure Synapse, Databricks, Apache Airflow, PySpark, dbt, RAG Pipelines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; background: #e8edf5; color: #1e293b; }
+        .page-wrapper { padding: 30px 20px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+        .print-label { font-size: 12px; color: #64748b; background: white; padding: 8px 20px; border-radius: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; }
+        .page { width: 210mm; background: white; box-shadow: 0 8px 50px rgba(0,0,0,0.18); border-radius: 2px; overflow: hidden; }
+
+        /* HEADER */
+        .header { background: linear-gradient(135deg, #0a1628 0%, #1a2f5e 60%, #1e3a70 100%); padding: 28px 42px 22px; position: relative; overflow: hidden; }
+        .header::before { content: ''; position: absolute; top: -30px; right: -30px; width: 200px; height: 200px; border-radius: 50%; background: rgba(59,130,246,0.08); }
+        .header::after { content: ''; position: absolute; bottom: -20px; left: 30%; width: 300px; height: 100px; border-radius: 50%; background: rgba(99,102,241,0.06); }
+        .header-name { font-size: 28pt; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1; position: relative; z-index: 1; }
+        .ai-badge { display: inline-flex; align-items: center; background: linear-gradient(135deg, #3b82f6, #6366f1); color: white; font-size: 7pt; font-weight: 700; padding: 3px 9px; border-radius: 10px; margin-left: 10px; vertical-align: middle; text-transform: uppercase; letter-spacing: 0.8px; }
+        .header-title { font-size: 10.5pt; color: #93c5fd; margin-top: 6px; font-weight: 400; position: relative; z-index: 1; }
+        .header-title strong { color: #60a5fa; font-weight: 600; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px 0; margin-top: 14px; position: relative; z-index: 1; }
+        .contact-item { display: flex; align-items: center; gap: 6px; font-size: 8.5pt; color: #cbd5e1; }
+        .contact-item a { color: #93c5fd; text-decoration: none; }
+
+        /* BODY */
+        .body { padding: 20px 42px 34px; }
+        .section { margin-bottom: 15px; }
+        .section-title { font-size: 8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #1e3a5f; border-left: 3px solid #2563eb; padding-left: 10px; margin-bottom: 9px; }
+        .divider { height: 1px; background: linear-gradient(90deg, #dbeafe, #e2e8f0, transparent); margin: 5px 0 13px; }
+
+        /* SUMMARY */
+        .summary-text { font-size: 9.5pt; color: #374151; line-height: 1.65; text-align: justify; }
+        .summary-text strong { color: #0f1f3d; }
+
+        /* SKILLS */
+        .skills-table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+        .skills-table tr { border-bottom: 1px solid #f1f5f9; }
+        .skills-table tr:last-child { border-bottom: none; }
+        .skills-table td { padding: 5px 0; vertical-align: top; }
+        .skills-table td:first-child { font-weight: 600; color: #1e3a5f; white-space: nowrap; padding-right: 14px; width: 165px; font-size: 8.5pt; }
+        .skills-ai-row td { background: #eff6ff; padding-left: 8px; padding-right: 8px; border-radius: 4px; }
+        .skills-ai-row td:first-child { color: #1d4ed8 !important; }
+
+        /* EXPERIENCE */
+        .exp-company { margin-bottom: 12px; }
+        .exp-co-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1px; }
+        .exp-co-name { font-size: 10.5pt; font-weight: 700; color: #0a1628; }
+        .exp-co-badge { display: inline-flex; align-items: center; gap: 4px; background: #dcfce7; color: #166534; font-size: 7pt; font-weight: 700; padding: 2px 7px; border-radius: 8px; margin-left: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .exp-co-tenure { font-size: 8.5pt; color: #6b7280; font-style: italic; }
+        .exp-co-sub { font-size: 8.5pt; color: #4b5563; margin-bottom: 6px; }
+
+        .exp-role-block { margin-bottom: 10px; padding-left: 14px; border-left: 2px solid #dbeafe; }
+        .exp-role-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; flex-wrap: wrap; gap: 4px; }
+        .exp-role-left { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+        .exp-role-title { font-size: 10pt; font-weight: 700; color: #1d4ed8; }
+        .exp-role-date { font-size: 8.5pt; color: #6b7280; font-style: italic; white-space: nowrap; }
+        .exp-bullets { margin: 4px 0 4px 15px; }
+        .exp-bullets li { font-size: 9.5pt; color: #374151; margin-bottom: 3px; line-height: 1.55; }
+        .tech-stack { font-size: 8.5pt; color: #64748b; margin-top: 4px; }
+        .tech-stack strong { color: #475569; font-weight: 600; }
+
+        .standalone-exp { margin-bottom: 10px; }
+        .standalone-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .standalone-co { font-size: 10.5pt; font-weight: 700; color: #0a1628; }
+        .standalone-date { font-size: 8.5pt; color: #6b7280; font-style: italic; }
+        .standalone-role-title { font-size: 9.5pt; font-weight: 600; color: #374151; margin-bottom: 3px; }
+
+        /* PROJECTS */
+        .project-entry { margin-bottom: 9px; }
+        .project-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px; }
+        .project-name { font-size: 10pt; font-weight: 700; color: #1e3a5f; }
+        .project-link a { font-size: 8pt; color: #2563eb; text-decoration: none; }
+
+        /* CERTIFICATIONS */
+        .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; }
+        .cert-item { display: flex; align-items: flex-start; gap: 6px; font-size: 8.5pt; color: #374151; padding: 2px 0; line-height: 1.4; }
+        .cert-dot { color: #2563eb; font-weight: bold; flex-shrink: 0; }
+        .cert-star { color: #1d4ed8; font-weight: 700; }
+
+        /* EDUCATION */
+        .edu-degree { font-size: 10pt; font-weight: 700; color: #0a1628; }
+        .edu-uni { font-size: 9.5pt; color: #374151; }
+
+        @media print {
+            body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .page-wrapper { padding: 0; gap: 0; }
+            .print-label { display: none; }
+            .page { width: 100%; box-shadow: none; border-radius: 0; overflow: visible; }
+            @page { size: A4; margin: 5mm 10mm 5mm 10mm; }
+            .header { padding: 18px 32px 14px; }
+            .body { padding: 8px 32px 12px; }
+            /* Allow main blocks to break naturally to avoid huge gaps */
+            .exp-company, .exp-role-block, .standalone-exp, .project-entry, .section { page-break-inside: auto; }
+            /* Keep bullet points intact */
+            li { page-break-inside: avoid; }
+            /* Prevent orphans at bottom of page */
+            .exp-co-header, .exp-role-header, .standalone-header, .project-header, .section-title { page-break-after: avoid; }
+            .cert-grid { page-break-inside: auto; }
+            .cert-item { page-break-inside: avoid; }
+            .divider { page-break-after: avoid; }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="print-label">📄 2-Page Detailed Resume (Final) — Kundan Singh | Ctrl+P → Save as PDF → A4, No Margins</div>
+    <div class="page">
+
+        <!-- HEADER -->
+        <div class="
